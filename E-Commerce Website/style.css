@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* HEADER START */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for contrast */
+    position: fixed; /* Make header fixed at the top */
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    margin-left: 30px; /* Adjusted margin to space out nav items */
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222; /* Dark text color for better contrast */
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #007BFF; /* Blue color for hover and active states */
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #007BFF; /* Blue underline for active link */
+    position: absolute;
+    bottom: -5px; /* Adjusted position */
+    left: 0;
+}
+
+.logo {
+    width: 30px; /* Adjust logo size as needed */
+}
+
+/* HOME PAGE */
+#hero {
+    background-image: url('pic/bg1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 80px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: rgb(177, 51, 26);
+}
+
+#hero button {
+    background-image: url('pic/button.png');
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#button.active {
+    color: #22982a;
+}
+
+/* FEATURE SECTION */
+#feature {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light grey background for feature section */
+}
+
+.Fbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+}
+
+
+.Fbox h6 {
+    font-size: 16px;
+    color: #222;
+}
+#feature {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center;
+    background-color: #f4f4f4; /* Light grey background for feature section */
+}
+
+.Fbox {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 10px 20px 34px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+    border: 1px solid #cce7de;
+    border-radius: 15px 0;
+    margin: 15px 20px; /* Add some margin to space out multiple Fbox elements if needed */
+}
+
+.Fbox:hover{
+    box-shadow: 50px 10px 54px rgba(70, 62, 221, 0.1); /* Adjusted shadow */
+}
+.Fbox h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+
+}
+.Fbox:nth-child(2) h6{
+    background-color:#a8c0da;
+}
+.Fbox:nth-child(3) h6{
+    background-color: #ebe0d1;
+}
+.Fbox:nth-child(4) h6{
+    background-color: #cce7de;
+}
+.Fbox:nth-child(5) h6{
+    background-color: #d1d5a2;
+
+}
